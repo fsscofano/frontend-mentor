@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+    :root {
+      --dark-cyan: hsl(185, 75%, 39%);
+      --very-dark: hsl(229, 23%, 23%);
+      --dark-gray-blue: hsl(227, 10%, 46%);
+      --dark-gray: hsl(0, 0%, 59%);
+    }
+
+    body {
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 18px;
+      color: var(--very-dark);
+      background-color: var(--dark-cyan);
+      background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+      background-size: 50%;
+      background-position: left -50vh, right 50vh;
+      background-repeat: no-repeat;
+    }
+
+    #card {
+      margin: 25vh auto 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 350px;
+      background-color: white;
+      box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-bg {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .profile-pic {
+      position: relative;
+      bottom: 50px;
+      margin-bottom: -50px;
+      border: 7px solid white;
+      border-radius: 100px;
+    }
+
+    hr {
+      opacity: 30%;
+    }
+    
+    .social-info {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* Attribution */
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id='card'>
+
+    <img src="images/bg-pattern-card.svg" alt="" class='card-bg'>
+
+    <img src="images/image-victor.jpg" alt="" class='profile-pic'>
+
+    <p><strong>Victor Crest</strong> 26</p>
+    <p>London</p>
+
+    <hr>
+
+    <div class='social-info'>
+
+      <div class='slot'>
+        <p><strong>80K</strong></p>
+        <p>Followers</p>
+      </div>
+
+      <div class='slot'>
+        <p><strong>803K</strong></p>
+        <p>Likes</p>
+      </div>
+
+      <div class='slot'>
+        <p><strong>1.4K</strong></p>
+        <p>Photos</p>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Fernando Schneider</a>.
+  </div>
+</body>
+
+</html>
